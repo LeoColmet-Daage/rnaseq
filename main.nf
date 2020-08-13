@@ -1558,6 +1558,7 @@ if (params.pseudo_aligner == 'salmon') {
         salmon quant --validateMappings \\
                         --seqBias --useVBOpt --gcBias \\
                         --geneMap ${gtf} \\
+			--numBootstraps 100\\
                         --threads ${task.cpus} \\
                         --libType=${rnastrandness} \\
                         --index ${index} \\
